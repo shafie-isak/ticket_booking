@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php 
-        include ("pages/home.php");
+        include ("routes/home.php");
     ?>
 </body>
 </html>

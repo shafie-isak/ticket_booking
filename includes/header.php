@@ -15,8 +15,7 @@
             </ul>
         </nav>
         <div class="registrLogin">
-            <a href="#">Register</a>
-            <button>Login</button>
+            <button>Login/Join</button>
         </div>
     </div>
 </header>

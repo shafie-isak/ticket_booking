@@ -22,7 +22,7 @@
     align-items: center;
   }
   header a img{
-    width: 200px;
+    width: 250px;
   }
 
 nav ul{
@@ -38,7 +38,7 @@ nav ul li a{
 
 nav ul li a:hover{
     color: #E1B444;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .active{
@@ -62,6 +62,15 @@ nav ul li a:hover{
     color: #E1B444;
     font-size: 20px;
     font-weight: 500;
+    cursor: pointer;
+}
+
+
+.registrLogin button:hover{
+  background-color: #E1B444;
+  color: #01606F;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 
  .heroSection{
@@ -113,6 +122,7 @@ nav ul li a:hover{
     font-size: 15px;
  }
 
+
  .heroText form button{
     padding: 10px 15px;
     font-size: 15px;
@@ -128,6 +138,11 @@ nav ul li a:hover{
     padding: 15px 30px;
     border-radius: 10px;
     margin-top: 20px;
+ }
+ .heroText .btn:hover{
+  background-color: #E1B444;
+  color: #01606F;
+  transition: all 0.5s;
  }
   .image-container {
     position: relative;
@@ -216,3 +231,165 @@ nav ul li a:hover{
     animation-delay: 1s;
   }
   
+
+  .sectionHeader{
+    color: #01606F;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .services{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .card{
+    border: 1px solid #01606F;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 300px;
+    min-height: 200px;
+    margin: 10px;
+  }
+
+  .card .icon{
+    background-color: #01606F;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+
+  .card .icon h1{
+    font-size: 4rem;
+  }
+
+  .card h1{
+    margin: 10px 0;
+    color: #01606F;
+  }
+
+  .card p{
+    margin: 5px 0;
+  }
+
+  .card button{
+    border: 1px solid #01606F;
+    color: #E1B444;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+  
+  .card:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  .card button:hover{
+    background-color: #01606F;
+    color: #ffffffff;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+  /* footer styling startis here */
+
+  footer{
+    background-color: #01606F;
+    
+  }
+  
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    gap: 100px;
+  }
+
+  .footer p{
+    font-size: 22px;
+    color: #ffffffff;
+    font-style: italic;
+  }
+
+
+  .footer nav ul{
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+
+  .footer nav ul li a{
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .footer form{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+  }
+
+  .footer form input, .footer form textarea{
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin: 5px;
+  }
+  .footer form input:focus, .footer form textarea:focus{
+    outline: 4px solid #00c5e3;
+  }
+
+  .footer form textarea{
+    height: 100px;
+    resize: none;
+  }
+
+  .footer form button{
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    background-color: #00c5e3;
+    border-radius: 10px;
+  }
+
+  .footer form button:hover{
+    background-color: #E1B444;
+    color: #01606F;
+    transition: all 0.5s;
+  }
+
+  footer hr{
+    border: none; 
+    border-top: 1px solid #ffffffff;
+  }
+  footer .copyright{
+    font-size: 15px;
+    text-align: center;
+    color: #ffffffff;
+    padding: 30px;
+  }
