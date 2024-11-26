@@ -1,7 +1,7 @@
 <footer>
     <div class="container">
         <div class="footer">
-            <img src="assets/image/logo.png" width="250px" alt="logo">
+            <img src="assets/images/logo.png" width="250px" alt="logo">
             <nav>
                 <p>Quick access</p>
                 <ul>

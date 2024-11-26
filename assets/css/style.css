@@ -31,7 +31,7 @@ nav ul{
 }
 
 nav ul li a{
-    color: #ffffffff;
+    color: #fff;
     font-weight: 500;
     font-size: 25px;
 }
@@ -74,7 +74,7 @@ nav ul li a:hover{
 }
 
  .heroSection{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../image/hero_bg.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/hero_bg.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -93,24 +93,24 @@ nav ul li a:hover{
 
  .heroText h1{
     font-size: 3rem;
-    color: #ffffffff;
+    color: #fff;
     margin: 20px 0;
  }
  .heroText span{
     color: #E1B444;
  }
  .heroText p{
-    color: #ffffffff;
+    color: #fff;
     font-size: 25px;
     margin: 20px 0;
  }
 
  .heroText form button .icon_color{
-    color: #ffffffff;
+    color: #fff;
  }
  .heroText form{
     margin: 20px 0;
-    background-color: #ffffffff;
+    background-color: #fff;
     width: 400px;
  }
  .heroText form input{
@@ -132,7 +132,7 @@ nav ul li a:hover{
  }
  .heroText .btn{
     background-color: #01606F;
-    color: #ffffffff;
+    color: #fff;
     border: none;
     font-size: 23px;
     padding: 15px 30px;
@@ -147,8 +147,8 @@ nav ul li a:hover{
   .image-container {
     position: relative;
     right: 200px;
-    width: 300px; /* Adjust based on your image sizes */
-    height: 300px; /* Adjust based on your image sizes */
+    width: 300px;
+    height: 300px;
   }
   
   .image {
@@ -157,7 +157,7 @@ nav ul li a:hover{
     width: 100%;
     object-fit: cover;
     border-radius: 20px;
-    outline: 10px solid #ffffffff
+    outline: 10px solid #fff
   }
   
   /* Rotations */
@@ -230,12 +230,88 @@ nav ul li a:hover{
     animation-duration: 4.5s;
     animation-delay: 1s;
   }
-  
 
-  .sectionHeader{
+  .tickets{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+  }
+
+  .ticketsSection{
+    padding: 30px;
+  }
+
+  .ticketCard{
+    min-width: 350px;
+    width: 380px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px
+  }
+
+  .ticketCard:hover{
+    transform: translateY(-20px);
+    transition: all 0.5s;
+  }
+  
+  .imgHolder{
+    width: 100%;
+    height: 220px;
+    background-color: #01606F;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .imgHolder img{
+    width: 100%;
+  }
+
+  .imgHolder img:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
+  }
+
+  .ticketcaption{
+    height: 280px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .ticketcaption h1{
+    margin: 10px 0px;
     color: #01606F;
+  }
+
+  .ticketcaption p{
+    margin: 5px 0px;
+  }
+
+  .ticketcaption button{
+    margin: 10px 0px;
+    background-color: #01606F;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+  .sectionHeader{
+    color: #E1B444;
     text-align: center;
     margin: 20px 0;
+  }
+
+  .servicesSection{
+    background-color: #01606F;
+    padding: 20px;
   }
 
   .services{
@@ -246,7 +322,7 @@ nav ul li a:hover{
   }
 
   .card{
-    border: 1px solid #01606F;
+    border: 2px solid #E1B444;
     padding: 15px;
     border-radius: 15px;
     display: flex;
@@ -260,7 +336,7 @@ nav ul li a:hover{
   }
 
   .card .icon{
-    background-color: #01606F;
+    background-color: #fff;
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -272,15 +348,16 @@ nav ul li a:hover{
 
   .card h1{
     margin: 10px 0;
-    color: #01606F;
+    color: #E1B444;
   }
 
   .card p{
     margin: 5px 0;
+    color: #fff;
   }
 
   .card button{
-    border: 1px solid #01606F;
+    border: 1px solid #E1B444;
     color: #E1B444;
     background-color: transparent;
     border-radius: 10px;
@@ -293,20 +370,59 @@ nav ul li a:hover{
   .card:hover{
     transform: scale(1.05);
     transition: all 0.5s;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
     cursor: pointer;
   }
 
   .card button:hover{
-    background-color: #01606F;
-    color: #ffffffff;
+    background-color: #fff;
+    color: #01606F;
     transition: all 0.5s;
     cursor: pointer;
   }
 
 
+.partnersSection {
+  text-align: center;
+  padding: 20px;
+}
 
+.sectionHeader {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
 
+.partnersContainer {
+  display: flex;
+  overflow-x: hidden;
+  white-space: nowrap;
+  animation: scrollPartners 20s linear infinite;
+}
+
+.partnerLogo {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.partnerLogo img {
+  width: 120px; 
+  height: auto;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.partnerLogo p {
+  margin-top: 10px;
+}
+
+@keyframes scrollPartners {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
 
 
@@ -315,6 +431,7 @@ nav ul li a:hover{
 
   footer{
     background-color: #01606F;
+    border-top: 2px solid #E1B444;
     
   }
   
@@ -328,7 +445,7 @@ nav ul li a:hover{
 
   .footer p{
     font-size: 22px;
-    color: #ffffffff;
+    color: #fff;
     font-style: italic;
   }
 
@@ -385,11 +502,11 @@ nav ul li a:hover{
 
   footer hr{
     border: none; 
-    border-top: 1px solid #ffffffff;
+    border-top: 1px solid #fff;
   }
   footer .copyright{
     font-size: 15px;
     text-align: center;
-    color: #ffffffff;
+    color: #fff;
     padding: 30px;
   }
