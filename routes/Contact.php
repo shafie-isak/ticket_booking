@@ -1,7 +1,7 @@
 <?php
   include('includes/header.php');  
 ?>
-
+<h1 class="sectionHeader">Contact Us</h1>
 <div class="container contact">
     <form>
         <input type="text" placeholder="Full name">

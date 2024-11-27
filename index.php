@@ -11,11 +11,8 @@
 <body>
 
     <?php 
-        include ("routes/contact.php");
+        include ("routes/about.php");
     ?>
-
-
-
 <script src="assets/js/main.js"></script>
 </body>
 </html>
