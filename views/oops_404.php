@@ -4,6 +4,6 @@
         <img src="assets/images/Oops_404.png" alt="oops 404 not found">
         <h2>Something Went Wrong</h2>
         <p>Sorry! we cant find the page your looking for!</p>
-        <button>GO Home</button>
+        <a href="/"><button>GO Home</button></a>
     </div>
 </div>

@@ -7,16 +7,15 @@
         </a>
         <nav>
             <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Tickets</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/"class= <?= $requestUri == "/" ?  "active": "" ?>>Home</a></li>
+                <li><a href="/tickets" class= <?= $requestUri == "/tickets" ?  "active": "" ?>>Tickets</a></li>
+                <li><a href="/about" class= <?= $requestUri == "/about" ?  "active": "" ?> >About</a></li>
+                <li><a href="/contact" class= <?= $requestUri == "/contact" ?  "active": "" ?> >Contact</a></li>
             </ul>
         </nav>
         <div class="registrLogin">
-            <a href="">Register</a>
-            <button>Login</button>
+            <a href="/register" class= <?= $requestUri == "/register" ?  "active": "" ?>>Register</a>
+            <button><a href="/login">Login</a></button>
         </div>
     </div>
 </header>
