@@ -11,7 +11,7 @@
         <h1>Welcome back</h1>
         <form>
               <input type="text" placeholder="username">
-              <input type="text" placeholder="password">
+              <input type="password" placeholder="password">
               <button>Login</button>
           </form>
           <p>If you don't have an account, <a href="#">Register</a></p>

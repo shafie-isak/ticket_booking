@@ -11,6 +11,9 @@ class UserController {
     public function showRegisterForm() {
         include 'views/user.php';
     }
+    public function showHome() {
+        include 'views/home.php';
+    }
 
     public function registerUser() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {

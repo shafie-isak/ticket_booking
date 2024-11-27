@@ -10,7 +10,7 @@
       <div class="loginCover">
         <h1>Jion Us</h1>
         <form action="" method="POST">
-            <input type="text" placeholder="name">
+            <input type="text" placeholder="username">
               <input type="email" placeholder="email">
               <input type="phone" placeholder="phone">
               <input type="password" placeholder="create password">
