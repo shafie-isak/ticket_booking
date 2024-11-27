@@ -41,7 +41,8 @@ nav ul li a:hover{
 }
 
 .active{
-    color: #E1B444;
+  padding: 10px;
+    background-color: #0794aaa4;
     font-weight: 800;
 }
 
@@ -234,12 +235,20 @@ nav ul li a:hover{
   .tickets{
     padding: 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .scroller{
+    padding: 20px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 15px;
     overflow-x: scroll;
     scrollbar-width: none;
-    overflow: hidden;
   }
 
   .ticketsSection{
@@ -304,6 +313,34 @@ nav ul li a:hover{
     padding: 10px 15px;
     border-radius: 10px;
   }
+
+  .slider-container {
+    position: relative;
+    overflow: hidden;
+}
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 24px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .left {
+      left: 10px;
+  }
+
+  .right {
+      right: 10px;
+  }
+
+
   .sectionHeader{
     color: #E1B444;
     text-align: center;
