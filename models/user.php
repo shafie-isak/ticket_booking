@@ -11,7 +11,7 @@ class UserModel {
     public function registerUser($name, $email, $phone, $password) {
         $sql = "INSERT INTO users (name, email, phone, password) VALUES (?, ?, ?, ?)";
         $statement = $this->conn->prepare($sql);
-        $statement->bind_param("sss", $name, $email, $phone, $password);
+        $statement->bind_param("ssss", $name, $email, $phone, $password);
         return $statement->execute();
     }
 }

@@ -11,7 +11,7 @@
 <input type="email" name="email" required>
 <br>
 <label for="">Phone</label><br>
-<input type="number" name="number" required>
+<input type="number" name="phone" required>
 <br>
 <label for="">Password</label><br>
 <input type="password" name="password" required>
