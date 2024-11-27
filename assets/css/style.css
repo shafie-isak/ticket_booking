@@ -239,6 +239,7 @@ nav ul li a:hover{
     gap: 15px;
     overflow-x: scroll;
     scrollbar-width: none;
+    overflow: hidden;
   }
 
   .ticketsSection{
@@ -251,7 +252,7 @@ nav ul li a:hover{
     height: 500px;
     background-color: #fff;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    border-radius: 20px
+    border-radius: 20px;
   }
 
   .ticketCard:hover{
@@ -333,6 +334,9 @@ nav ul li a:hover{
     max-width: 300px;
     min-height: 200px;
     margin: 10px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
   }
 
   .card .icon{
@@ -424,6 +428,17 @@ nav ul li a:hover{
   }
 }
 
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
 
 
 
@@ -509,4 +524,41 @@ nav ul li a:hover{
     text-align: center;
     color: #fff;
     padding: 30px;
+  }
+
+
+  .oopsLogo{
+    margin: 10px 0;
+  }
+  .oops404{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+  .oops404 img{
+      width: 50%;
+  }
+
+  .oops404 h2{
+    margin-bottom: 20px;
+  }
+
+  .oops404 button{
+    margin: 20px;
+    background-color: #01606F;
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 10px;
+  }
+
+  .oops404 button:hover{
+    background-color: #E1B444;
+    color: #01606F;
+    transition: all 0.5s;
   }
