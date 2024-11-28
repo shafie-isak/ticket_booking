@@ -307,6 +307,9 @@ nav ul li a:hover{
     margin: 5px 0px;
     font-size: 12px;
   }
+  .ticketcaption form button{
+    width: 100%;
+  }
 
   .ticketcaption button{
     margin-top: 10px;
