@@ -1,77 +1,60 @@
 .overlay{
-    height: 85vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .login{
-    background-color: #fff;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    width: 60%;
-  }
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .imageCover{
-    flex: 1;
-  }
+.login{
+  width: 400px;
+  height: 500px;
+  background-color: #01606F;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .imageCover img{
-    width: 500px;
-    vertical-align: middle;
-  }
 
-  .loginCover h1{
-    text-align: center;
-    margin-bottom: 20px;
-    color: #fff;
-  }
+.login h1{
+  text-align: center;
+  margin-bottom: 18px;
+  color: #fff;
+}
 
-  .loginCover{
-    flex: 1;
-    height: 65vh;
-    background-color: #01606F;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
-  }
 
-  .loginCover form{
-    margin: 0px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.login form{
+  margin: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .loginCover form input,.loginCover form button{
-    padding: 15px 15px;
-    font-size: 17px;
-    border-radius: 20px;
-    border: none;
-    margin: 10px 0px;
-    outline: none;
-  }
+.login form input,.login form button{
+  padding: 12px 15px;
+  font-size: 15px;
+  border-radius: 20px;
+  border: none;
+  margin: 10px 0px;
+  outline: none;
+}
 
-  .loginCover form button{
-    background-color: #E1B444;
-    font-size: 20px;
-    font-weight: 400;
-  }
+.login form button{
+  background-color: #E1B444;
+  font-size: 18px;
+  font-weight: 400;
+}
 
-  .loginCover form button:hover{
-    background-color: #000;
-    color: #fff;
-    transition: all 0.5s;
-    cursor: pointer;
-  }
-  .loginCover p{
-    margin-top: 20px;
-    color: #fff;
-  }
+.login form button:hover{
+  background-color: #000;
+  color: #fff;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.login p{
+  margin-top: 20px;
+  color: #fff;
+}
