@@ -41,30 +41,3 @@
 </body>
 </html>
 
-<?php
-
-include 'config/database.php';
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-include 'controllers/user.php';
-
-$action = $_GET['action'] ?? 'showHome';  
-
-switch ($action) {
-    case 'register_user':
-        $controller = new UserController($conn); 
-        $controller->registerUser(); 
-        break;
-
-    case 'showHome':
-        $controller = new UserController($conn); 
-        $controller->showHome();
-        break;
-
-    default:
-        echo "Welcome to the MVC Ticket System!";
-        break;
-}
-?>
