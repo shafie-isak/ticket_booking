@@ -1,0 +1,126 @@
+.dashboardHeaderContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    background-color: #064f5a;
+}
+.dashboardHeaderleft{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.dashboardHeaderleft img{
+    width: 180px;
+    margin: 15px 50px;
+}
+.dashboardHeaderleft hr{
+    height: 100%;
+    margin-right: 30px;
+    border: 0.5px solid #fff6;
+}
+
+.dashboardHeaderleft h3{
+    color: #fff;
+}
+
+.dashboardHeaderRight{
+    display: flex;
+    align-items: center;
+}
+
+.dashboardHeaderRight i{
+    font-size: 22px;
+    color: #00b0cb;
+}
+
+.dashboardHeaderRight img{
+    width: 40px;
+    margin: 0px 30px;
+    border: 1px solid #00b0cb;
+}
+
+.dashContainer{
+    display: flex;
+}
+
+.dashcardscont{
+    width: 81.7%;
+    height: 92vh;
+    overflow: hidden;
+    background-color: #eee;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.dashCard{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.iconCont{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: -80px;
+    margin-left: 10px;
+}
+
+.dashCard-1 .iconCont{
+    background-color: #ffa285;
+    i{
+        color: #b02900;
+    }
+}
+
+.dashCard-2 .iconCont{
+    background-color: #ffde85;
+    i{
+        color: #b09800;
+        font-size: 18px;
+    }
+}
+
+.dashCard-3 .iconCont{
+    background-color: #a4ff85;
+    i{
+        color: #0fb000;
+    }
+}
+
+.dashCard-4 .iconCont{
+    background-color: #85caff;
+    i{
+        color: #003eb0;
+    }
+}
+
+.dashCardText{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dashCardText h1, .dashCardText p{
+    text-align: end;
+    color: #064f5a;
+}
+
+.dashCardText p{
+    font-size: 12px;
+}

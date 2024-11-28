@@ -145,6 +145,7 @@ font-weight: 500;
 background-color: #E1B444;
 color: #01606F;
 transition: all 0.5s;
+cursor: pointer;
 }
 .image-container {
   position: relative;
@@ -319,6 +320,13 @@ transition: all 0.5s;
   font-size: 15px;
   padding: 10px 15px;
   border-radius: 10px;
+}
+
+.ticketcaption button:hover{
+  background-color: #E1B444;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 
 .slider-container {
@@ -602,7 +610,7 @@ footer .copyright{
 .about .aboutbody{
   flex: 1;
 }
-.about .profile{
+.about .profileInfo{
   display: flex;
   align-items: center;
   height: 80px;
@@ -613,7 +621,7 @@ footer .copyright{
 .about .info{
   height: 30px;
 }
-.about .profile p{
+.about .profileInfo p{
   font-size: 12px;
 }
 
@@ -625,7 +633,7 @@ footer .copyright{
     vertical-align: middle;
   }
 }
-.about .profile img{
+.profile{
   width: 60px;
   border-radius: 50%;
 }
@@ -740,5 +748,4 @@ footer .copyright{
   background-color: #E1B444;
   color: #01606F;
   transition: all 0.5s;
-
 }

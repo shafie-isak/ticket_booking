@@ -1,5 +1,11 @@
 <?php
   include('includes/header.php');  
+
+  if (isset($_POST['book_now'])) {
+    header('Location: /ticketbooking');
+  }
+
+        
 ?>
 
 <div class="heroSection">
@@ -16,7 +22,7 @@
                     <i class="fa-solid fa-magnifying-glass icon_color"></i>
                 </button>
             </form>
-            <button class="btn">Book now</button>
+            <a href="/tickets"><button class="btn">Book now</button></a>
         </div>
         <div class="image-container">
             <img src="assets/images/image2.jpg" class="image image1" alt="Image 1">
@@ -33,37 +39,20 @@
     <button class="arrow left" onclick="moveSlide('left')">←</button>
 
     <div class="container scroller">
-      
-      <div class="ticketCard">
+    <div class="ticketCard">
         <div class="imgHolder">
-          <img src="assets/images/Jazeera_beach_view.jpg" alt="liido">
+            <img src="assets/images/Jazeera_beach_view.jpg" alt="liido">
         </div>
         <div class="ticketcaption">
-          <h1>Jaziiro beach</h1>
-          <p>Jaziiro Beach is a hidden gem known for its serene atmosphere and stunning natural beauty. With its soft sands and clear waters, it's a peaceful retreat for those looking to escape the crowds and enjoy the tranquil surroundings.</p>
-          <button>Book now</button>
+            <h1>Jaziiro beach</h1>
+            <p>Jaziiro Beach is a hidden gem known for its serene atmosphere and stunning natural beauty. With its soft sands and clear waters, it's a peaceful retreat for those looking to escape the crowds and enjoy the tranquil surroundings.</p>
+            
+            <!-- Form to handle redirection -->
+            <form method="POST">
+                <button type="submit" name="book_now">Book now</button>
+            </form>
         </div>
-      </div>
-      <div class="ticketCard">
-        <div class="imgHolder">
-          <img src="assets/images/liido.jpg" alt="liido">
-        </div>
-        <div class="ticketcaption">
-          <h1>Liido beach</h1>
-          <p>Liido Beach offers pristine sands and crystal-clear waters, making it a perfect spot for relaxation and seaside enjoyment.</p>
-          <button>Book now</button>
-        </div>
-      </div>
-      <div class="ticketCard">
-        <div class="imgHolder">
-          <img src="assets/images/Jazeera_beach_view.jpg" alt="liido">
-        </div>
-        <div class="ticketcaption">
-          <h1>Jaziiro beach</h1>
-          <p>Jaziiro Beach is a hidden gem known for its serene atmosphere and stunning natural beauty. With its soft sands and clear waters, it's a peaceful retreat for those looking to escape the crowds and enjoy the tranquil surroundings.</p>
-          <button>Book now</button>
-        </div>
-      </div>
+    </div>
       <div class="ticketCard">
         <div class="imgHolder">
           <img src="assets/images/liido.jpg" alt="liido">
@@ -71,7 +60,9 @@
         <div class="ticketcaption">
           <h1>Liido beach</h1>
           <p>Liido Beach offers pristine sands and crystal-clear waters, making it a perfect spot for relaxation and seaside enjoyment.</p>
-          <button>Book now</button>
+          <form method="POST">
+                <button type="submit" name="book_now">Book now</button>
+            </form>
         </div>
       </div>
       <div class="ticketCard">
@@ -81,7 +72,9 @@
         <div class="ticketcaption">
           <h1>Jaziiro beach</h1>
           <p>Jaziiro Beach is a hidden gem known for its serene atmosphere and stunning natural beauty. With its soft sands and clear waters, it's a peaceful retreat for those looking to escape the crowds and enjoy the tranquil surroundings.</p>
-          <button>Book now</button>
+          <form method="POST">
+                <button type="submit" name="book_now">Book now</button>
+            </form>
         </div>
       </div>
       <div class="ticketCard">
@@ -91,7 +84,33 @@
         <div class="ticketcaption">
           <h1>Liido beach</h1>
           <p>Liido Beach offers pristine sands and crystal-clear waters, making it a perfect spot for relaxation and seaside enjoyment.</p>
-          <button>Book now</button>
+          <form method="POST">
+                <button type="submit" name="book_now">Book now</button>
+            </form>
+        </div>
+      </div>
+      <div class="ticketCard">
+        <div class="imgHolder">
+          <img src="assets/images/Jazeera_beach_view.jpg" alt="liido">
+        </div>
+        <div class="ticketcaption">
+          <h1>Jaziiro beach</h1>
+          <p>Jaziiro Beach is a hidden gem known for its serene atmosphere and stunning natural beauty. With its soft sands and clear waters, it's a peaceful retreat for those looking to escape the crowds and enjoy the tranquil surroundings.</p>
+          <form method="POST">
+                <button type="submit" name="book_now">Book now</button>
+            </form>
+        </div>
+      </div>
+      <div class="ticketCard">
+        <div class="imgHolder">
+          <img src="assets/images/liido.jpg" alt="liido">
+        </div>
+        <div class="ticketcaption">
+          <h1>Liido beach</h1>
+          <p>Liido Beach offers pristine sands and crystal-clear waters, making it a perfect spot for relaxation and seaside enjoyment.</p>
+          <form method="POST">
+                <button type="submit" name="book_now">Book now</button>
+            </form>
         </div>
       </div>
     </div>
@@ -122,14 +141,6 @@
         </div>
         <div class="card">
             <div class="icon">
-                <h1>⛵</h1>
-            </div>
-            <h1 class="cardheader">boat</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, veritatis.</p>
-            <button class="action">Book now</button>
-        </div>
-        <div class="card">
-            <div class="icon">
                 <h1>🚢</h1>
             </div>
             <h1 class="cardheader">ship</h1>
@@ -138,7 +149,7 @@
         </div>
         <div class="card">
             <div class="icon">
-                <h1>✈️</h1>
+                <h1>✈</h1>
             </div>
             <h1 class="cardheader">Flayt</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, veritatis.</p>

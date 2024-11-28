@@ -6,7 +6,7 @@
 <div class="container about">
     
     <div class="aboutbody">
-        <div class="profile">
+        <div class="profileInfo">
             <img src="assets/images/profile1.jpeg"  alt="profile">
             <div class="info">
                 <h4>Mohamed warsame</h4>
