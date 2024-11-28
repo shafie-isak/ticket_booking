@@ -15,7 +15,7 @@
         </nav>
         <div class="registrLogin">
             <a href="/register" class= <?= $requestUri == "/register" ?  "active": "" ?>>Register</a>
-            <button><a href="/login">Login</a></button>
+            <a href="/login"><button>Login</button></a>
         </div>
     </div>
 </header>
