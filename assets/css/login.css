@@ -7,71 +7,54 @@
   }
   
   .login{
-    background-color: #fff;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    width: 60%;
-  }
-
-  .imageCover{
-    flex: 1;
-  }
-
-  .imageCover img{
-    width: 500px;
-    vertical-align: middle;
-  }
-
-  .loginCover h1{
-    text-align: center;
-    margin-bottom: 20px;
-    color: #fff;
-  }
-
-  .loginCover{
-    flex: 1;
-    height: 65vh;
+    width: 400px;
+    height: 500px;
     background-color: #01606F;
     padding: 20px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
   }
 
-  .loginCover form{
+
+  .login h1{
+    text-align: center;
+    margin-bottom: 18px;
+    color: #fff;
+  }
+
+
+
+  .login form{
     margin: 0px 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  .loginCover form input,.loginCover form button{
-    padding: 15px 15px;
-    font-size: 17px;
+  .login form input,.login form button{
+    padding: 12px 15px;
+    font-size: 15px;
     border-radius: 20px;
     border: none;
     margin: 10px 0px;
     outline: none;
   }
 
-  .loginCover form button{
+  .login form button{
     background-color: #E1B444;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
   }
 
-  .loginCover form button:hover{
+  .login form button:hover{
     background-color: #000;
     color: #fff;
     transition: all 0.5s;
     cursor: pointer;
   }
-  .loginCover p{
+  .login p{
     margin-top: 20px;
     color: #fff;
   }

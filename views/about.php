@@ -4,7 +4,7 @@
 <h1 class="sectionHeader">About Us</h1>
 
 <div class="container about">
-    <img src="assets/images/About_us_page_pana.png" class="pfofileimage" alt="">
+    
     <div class="aboutbody">
         <div class="profile">
             <img src="assets/images/profile1.jpeg"  alt="profile">
@@ -37,6 +37,9 @@
             <li><strong>Affordability:</strong> To offer competitive pricing and discounts, ensuring that travelers can always find the best deals.</li>
             <li><strong>Sustainability:</strong> Promote eco-friendly travel options and reduce the carbon footprint associated with ticket bookings and travel.</li>
         </ol>
+    </div>
+    <div class="aboutImgCont">
+        <img src="assets/images/About_us_page_pana.png" alt="">
     </div>
     
 </div>

@@ -33,7 +33,6 @@
     <button class="arrow left" onclick="moveSlide('left')">←</button>
 
     <div class="container scroller">
-      
       <div class="ticketCard">
         <div class="imgHolder">
           <img src="assets/images/Jazeera_beach_view.jpg" alt="liido">
@@ -117,14 +116,6 @@
                 <h1>🚙</h1>
             </div>
             <h1 class="cardheader">Car</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, veritatis.</p>
-            <button class="action">Book now</button>
-        </div>
-        <div class="card">
-            <div class="icon">
-                <h1>⛵</h1>
-            </div>
-            <h1 class="cardheader">boat</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, veritatis.</p>
             <button class="action">Book now</button>
         </div>
