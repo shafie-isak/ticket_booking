@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/ticketbooking.css">
     <link rel="stylesheet" href="assets/css/login.css">
 </head>
 <body>
@@ -26,22 +25,18 @@
             case '/contact':
                 include ("views/contact.php");
                 break;  
+
             case '/login':
                 include ("views/login.php");
                 break;
             case '/register':
                 include ("views/userRegistration.php");
                 break;
-            case '/ticketbooking':
-                include ("views/ticketBooking.php");
-                break;
             default:
                 include ("views/oops_404.php");
                 break;
         }
     ?>
-
-
 <script src="assets/js/main.js"></script>
 </body>
 </html>
