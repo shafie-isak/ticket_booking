@@ -7,12 +7,13 @@
 }
 .dashboardHeaderleft{
     display: flex;
+    width: 20%;
     align-items: center;
     height: 100%;
 }
 .dashboardHeaderleft img{
-    width: 180px;
-    margin: 15px 50px;
+    width: 100%;
+    padding: 15px 50px;
 }
 .dashboardHeaderleft hr{
     height: 100%;
@@ -45,86 +46,102 @@
     display: flex;
 }
 
-.dashcardscont{
-    width: 81.7%;
+.dashcardscont {
+    width: 80%;
     height: 92vh;
-    overflow: hidden;
-    background-color: #eee;
+    background-color: #f5f5f5;
     padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
 }
 
-.dashCard{
+.dashCard {
     background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    width: 250px;
+    padding: 20px;
+    border-radius: 12px;
+    width: 220px;
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
-    margin-top: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
-.iconCont{
+.iconCont {
     width: 50px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    margin-top: -80px;
-    margin-left: 10px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    margin-top: 10px;
 }
 
-.dashCard-1 .iconCont{
+.dashCard-1 .iconCont {
     background-color: #ffa285;
-    i{
-        color: #b02900;
-    }
 }
 
-.dashCard-2 .iconCont{
+.dashCard-2 .iconCont {
     background-color: #ffde85;
-    i{
-        color: #b09800;
-        font-size: 18px;
-    }
 }
 
-.dashCard-3 .iconCont{
+.dashCard-3 .iconCont {
     background-color: #a4ff85;
-    i{
-        color: #0fb000;
-    }
 }
 
-.dashCard-4 .iconCont{
+.dashCard-4 .iconCont {
     background-color: #85caff;
-    i{
-        color: #003eb0;
-    }
 }
 
-.dashCardText{
+.dashCard-1 .iconCont i {
+    color: #b02900;
+}
+
+.dashCard-2 .iconCont i {
+    color: #b09800;
+}
+
+.dashCard-3 .iconCont i {
+    color: #0fb000;
+}
+
+.dashCard-4 .iconCont i {
+    color: #003eb0;
+}
+
+.dashCardText {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.dashCardText h1, .dashCardText p{
     text-align: end;
-    color: #064f5a;
 }
 
-.dashCardText p{
-    font-size: 12px;
+.dashCardText p {
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
 }
+
+.dashCardText h1 {
+    font-size: 15px;
+    color: #064f5a;
+    font-weight: 700;
+    margin: 0;
+}
+
+.dashCardText p, .dashCardText h1 {
+    margin: 0;
+}
+
+.dashCardText h1 {
+    font-size: 32px;
+}
+
 
 
 .profile-as-btn{
@@ -180,7 +197,7 @@
     padding: 20px;
     padding-bottom: 0;
     background-color: #eee;
-    width: 81.7%;
+    width: 80%;
     height: 92vh;
     overflow: hidden;
 }
@@ -404,37 +421,74 @@ select {
 .dashMainContentCont .tables-container .delete-btn:hover {
     background-color: #d32f2f;
 }
-
-.dashMainContentCont .admin-booking-form h2{
-    margin: 0px auto;
-    margin-top: 20px;
-    padding: 15px;
+/* Form container styling */
+.ticket-booking-form {
     width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Heading styling */
+.ticket-booking-form h2 {
     text-align: center;
     background-color: #01606F;
     color: #fff;
+    font-size: 18px;
+    padding: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.dashMainContentCont .admin-booking-form form{
-    width: 80%;
+
+.ticket-booking-form form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 15px;
-    margin-bottom: 60px;
-    margin: 0px auto;
-    border: 1px solid #01606F;
     padding: 10px;
+    gap: 10px;
+    border: 1px solid #01606F;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
-.dashMainContentCont .admin-booking-form form button{
+/* Input and select fields styling */
+.ticket-booking-form .input-field {
+    width: 100%;
+    padding: 7px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    color: #333;
+}
+
+.ticket-booking-form .input-field:focus {
+    border-color: #01606F;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Label styling */
+.ticket-booking-form label {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Button styling */
+.ticket-booking-form form button {
     grid-column: span 2;
-    padding: 10px;
+    padding: 12px;
     background-color: #01606F;
-    font-weight: 500;
+    font-weight: 600;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
+
+.ticket-booking-form form button:hover {
+    background-color: #014c4f;
+}
+
