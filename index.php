@@ -6,7 +6,10 @@
     <title>Ticket Booking</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/ticketform.css">
+    <link rel="stylesheet" href="assets/css/manageusers.css">
     <link rel="stylesheet" href="assets/css/sidebar.css">
+    <link rel="stylesheet" href="assets/css/managetickets.css">
     <link rel="stylesheet" href="assets/css/dashboard.css">
     <link rel="stylesheet" href="assets/css/ticketbooking.css">
     <link rel="stylesheet" href="assets/css/login.css">
@@ -25,6 +28,12 @@
             case '/dashboard':
                 include ("views/dashbord.php");
                 break;
+            case '/addticket':
+                include ("views/addnewticket.php");
+                break;
+            case '/managetickets':
+                    include ("views/managetickets.php");
+                    break;
             case '/tickets':
                 include ("views/tickets.php");
                 break;
@@ -37,12 +46,17 @@
             case '/ticketbooking':
                 include ("views/ticketbooking.php");
                 break;  
-
+            case '/bookticket':
+                include ("views/adminbookticket.php");
+                break;  
             case '/login':
                 include ("views/login.php");
                 break;
             case '/register':
                 include ("views/userRegistration.php");
+                break;
+            case '/users':
+                include ("views/manageusers.php");
                 break;
             default:
                 include ("views/oops_404.php");

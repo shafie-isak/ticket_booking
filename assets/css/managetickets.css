@@ -1,0 +1,98 @@
+/* Style the ticket table container */
+.ticket-table-container {
+    width: 100%;
+    max-width: 95%;
+    height: 90%;
+    max-height: 95%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Heading */
+.ticket-table-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #01606F;
+}
+
+/* Style the table */
+.ticket-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Table headers */
+.ticket-table th {
+    background-color: #01606F;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Table rows */
+.ticket-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Hover effect for rows */
+.ticket-table tr:hover {
+    background-color: #f9f9f9;
+}
+.ticket-table th:last-child {
+    width: auto;         /* Small gap between the buttons */
+}
+
+/* Action column (td) */
+.ticket-table td:last-child {
+    width: auto;       
+    display: flex;
+    gap: 10px;
+         /* Small gap between the buttons */
+}
+
+/* Action buttons */
+.ticket-table .edit-btn, .ticket-table .delete-btn {
+    background-color: #01606F;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;                /* Make buttons take full width of the cell */
+    text-align: center;         /* Ensure text is centered inside buttons */
+}
+
+/* Hover effects */
+.ticket-table .edit-btn:hover {
+    background-color: #115964;
+}
+
+.ticket-table .delete-btn {
+    background-color: #f44336;
+}
+
+.ticket-table .delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+
+.ticket-table .edit-btn:hover {
+    background-color: #115964;
+}
+
+.ticket-table .delete-btn {
+    background-color: #f44336;
+}
+
+.ticket-table .delete-btn:hover {
+    background-color: #d32f2f;
+}

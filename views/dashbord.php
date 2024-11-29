@@ -1,6 +1,6 @@
 <?php 
     include("includes/dashbordHeader.php");
-    ?>
+?>
 
 <div class="dashContainer">
     <?php 
