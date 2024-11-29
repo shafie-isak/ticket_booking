@@ -6,8 +6,13 @@
   }
 
         
-?>
 
+  if (isset($_POST['book_now'])) {
+    header('Location: /ticketbooking');
+  }
+
+        
+?>
 <section class="ticketsSection">
   <h1 class="sectionHeader">Popular Tickets</h1>
     <div class="container tickets">

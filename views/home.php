@@ -3,12 +3,8 @@
 
   if (isset($_POST['book_now'])) {
     header('Location: /ticketbooking');
-  }
-
-        
+  }  
 ?>
-
-  
 
 <div class="heroSection">
     <div class="container hero">
@@ -24,7 +20,7 @@
                     <i class="fa-solid fa-magnifying-glass icon_color"></i>
                 </button>
             </form>
-            <button class="btn">Book now</button>
+            <a href="/tickets"><button class="btn">Explore more</button></a>
         </div>
         <div class="image-container">
             <img src="assets/images/image2.jpg" class="image image1" alt="Image 1">
@@ -39,7 +35,6 @@
   <h1 class="sectionHeader">Popular Tickets</h1>
   <div class="slider-container">
     <button class="arrow left" onclick="moveSlide('left')">←</button>
-
     <div class="container scroller">
     <div class="ticketCard">
         <div class="imgHolder">
@@ -121,7 +116,6 @@
 </section>
 
 
-
 <section class="servicesSection">
 <h1 class="sectionHeader">Our Services</h1>
     <div class="services container">
@@ -151,7 +145,7 @@
         </div>
         <div class="card">
             <div class="icon">
-                <h1>✈️</h1>
+                <h1>✈</h1>
             </div>
             <h1 class="cardheader">Flayt</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, veritatis.</p>

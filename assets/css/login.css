@@ -1,60 +1,60 @@
 .overlay{
-    height: 85vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .login{
-    width: 400px;
-    height: 500px;
-    background-color: #01606F;
-    padding: 20px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login{
+  width: 400px;
+  height: 500px;
+  background-color: #01606F;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 
-  .login h1{
-    text-align: center;
-    margin-bottom: 18px;
-    color: #fff;
-  }
+.login h1{
+  text-align: center;
+  margin-bottom: 18px;
+  color: #fff;
+}
 
 
 
-  .login form{
-    margin: 0px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.login form{
+  margin: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .login form input,.login form button{
-    padding: 12px 15px;
-    font-size: 15px;
-    border-radius: 20px;
-    border: none;
-    margin: 10px 0px;
-    outline: none;
-  }
+.login form input,.login form button{
+  padding: 12px 15px;
+  font-size: 15px;
+  border-radius: 20px;
+  border: none;
+  margin: 10px 0px;
+  outline: none;
+}
 
-  .login form button{
-    background-color: #E1B444;
-    font-size: 18px;
-    font-weight: 400;
-  }
+.login form button{
+  background-color: #E1B444;
+  font-size: 18px;
+  font-weight: 400;
+}
 
-  .login form button:hover{
-    background-color: #000;
-    color: #fff;
-    transition: all 0.5s;
-    cursor: pointer;
-  }
-  .login p{
-    margin-top: 20px;
-    color: #fff;
-  }
+.login form button:hover{
+  background-color: #000;
+  color: #fff;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.login p{
+  margin-top: 20px;
+  color: #fff;
+}
