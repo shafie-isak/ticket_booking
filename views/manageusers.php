@@ -10,8 +10,7 @@
     <div class="dashContentContainer">
     <div class="dashMainContentCont">
         <div class="contentHeader">
-            <h3>Ticket List</h3>
-            <a href="#" class="anchor-as--btn">+New Ticket</a>
+            <h3>Users List</h3>
         </div>
         <div class="filterCont">
             <form>
