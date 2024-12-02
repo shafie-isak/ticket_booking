@@ -1,4 +1,3 @@
-
 <?php 
     include("includes/dashbordHeader.php");
 ?>
@@ -59,7 +58,7 @@
                         <td>John Doe</td>
                         <td>john.doe@example.com</td>
                         <td>+1 234 567 890</td>
-                        <td>********</td> <
+                        <td>********</td>
                         <td>Admin</td>
                         <td class="users-table-last-child">
                             <button class="view-btn"><i class="fa-regular fa-eye"></i></button>
@@ -83,7 +82,7 @@
                         <td>John Doe</td>
                         <td>john.doe@example.com</td>
                         <td>+1 234 567 890</td>
-                        <td>********</td> <
+                        <td>********</td>
                         <td>Admin</td>
                         <td class="users-table-last-child">
                             <button class="view-btn"><i class="fa-regular fa-eye"></i></button>
@@ -103,78 +102,7 @@
                             <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
                         </td>
                     </tr>
-                    <tr>
-                        <td>John Doe</td>
-                        <td>john.doe@example.com</td>
-                        <td>+1 234 567 890</td>
-                        <td>********</td> <
-                        <td>Admin</td>
-                        <td class="users-table-last-child">
-                            <button class="view-btn"><i class="fa-regular fa-eye"></i></button>
-                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Jane Smith</td>
-                        <td>jane.smith@example.com</td>
-                        <td>+1 987 654 321</td>
-                        <td>********</td> 
-                        <td>User</td>
-                        <td class="users-table-last-child">
-                            <button class="view-btn"><i class="fa-regular fa-eye"></i></button>
-                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>John Doe</td>
-                        <td>john.doe@example.com</td>
-                        <td>+1 234 567 890</td>
-                        <td>********</td> <
-                        <td>Admin</td>
-                        <td class="users-table-last-child">
-                            <button class="view-btn"><i class="fa-regular fa-eye"></i></button>
-                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Jane Smith</td>
-                        <td>jane.smith@example.com</td>
-                        <td>+1 987 654 321</td>
-                        <td>********</td> 
-                        <td>User</td>
-                        <td class="users-table-last-child">
-                            <button class="view-btn"><i class="fa-regular fa-eye"></i></button>
-                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>John Doe</td>
-                        <td>john.doe@example.com</td>
-                        <td>+1 234 567 890</td>
-                        <td>********</td> <
-                        <td>Admin</td>
-                        <td class="users-table-last-child">
-                            <button class="view-btn"><i class="fa-regular fa-eye"></i></button>
-                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Jane Smith</td>
-                        <td>jane.smith@example.com</td>
-                        <td>+1 987 654 321</td>
-                        <td>********</td> 
-                        <td>User</td>
-                        <td class="users-table-last-child">
-                            <button class="view-btn"><i class="fa-regular fa-eye"></i></button> 
-                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
+                    <!-- More rows can follow the same structure without the extra "<" -->
                 </tbody>
             </table>
         </div>

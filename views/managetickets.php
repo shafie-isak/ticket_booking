@@ -11,7 +11,7 @@
     <div class="dashMainContentCont">
         <div class="contentHeader">
             <h2>Ticket List</h2>
-            <a href="#" class="anchor-as--btn">+New Ticket</a>
+            <a href="/addticket" class="anchor-as--btn">+New Ticket</a>
         </div>
         <div class="filterCont">
             <form>

@@ -17,51 +17,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <?php
-        session_start();
-        $requestUri = $_SERVER['REQUEST_URI'];
 
-        switch ($requestUri) {
-            case '/':
-                include ("views/home.php");
-                break;
-            case '/dashboard':
-                include ("views/dashbord.php");
-                break;
-            case '/addticket':
-                include ("views/addnewticket.php");
-                break;
-            case '/managetickets':
-                    include ("views/managetickets.php");
-                    break;
-            case '/tickets':
-                include ("views/tickets.php");
-                break;
-            case '/about':
-                include ("views/about.php");
-                break;
-            case '/contact':
-                include ("views/contact.php");
-                break;
-            case '/ticketbooking':
-                include ("views/ticketbooking.php");
-                break;  
-            case '/bookticket':
-                include ("views/adminbookticket.php");
-                break;  
-            case '/login':
-                include ("views/login.php");
-                break;
-            case '/register':
-                include ("views/userRegistration.php");
-                break;
-            case '/users':
-                include ("views/manageusers.php");
-                break;
-            default:
-                include ("views/oops_404.php");
-                break;
+    <?php
+        $routes = [
+            "/" => "views/home.php",
+            "/tickets" => "views/tickets.php",
+            "/dashboard" => "views/dashbord.php",
+            "/about" => "views/about.php",
+            "/contact" => "views/contact.php",
+            "/addticket" => "views/addnewticket.php",
+            "/managetickets" => "views/managetickets.php",
+            "/ticketbooking" => "views/ticketbooking.php",
+            "/bookticket" => "views/adminbookticket.php",
+            "/login" => "views/login.php",
+            "/register" => "views/userRegistration.php",
+            "/users" => "views/manageusers.php"
+        ];
+
+
+        $uri = parse_url($_SERVER["REQUEST_URI"])["path"];
+        function routeTooControllers($uri, $routes){
+            if(array_key_exists($uri, $routes)){
+                require $routes[$uri];
+            }
+            else{
+                abort();
+            }
         }
+
+
+        function abort($code = 404){
+
+            http_response_code($code);
+
+            require "views/oops_404.php";
+
+            die();
+        }
+
+        routeTooControllers($uri, $routes);
     ?>
 <script src="assets/js/main.js"></script>
 </body>
