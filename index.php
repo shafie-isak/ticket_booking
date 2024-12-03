@@ -16,7 +16,13 @@
 </head>
 <body>
     <?php
+  
         session_start();
+        include 'config/database.php';
+        include 'controllers/user.php';
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
         $requestUri = $_SERVER['REQUEST_URI'];
 
         switch ($requestUri) {
@@ -52,6 +58,10 @@
                 break;
             case '/register':
                 include ("views/userRegistration.php");
+                break;
+            case '/register_user':
+                $userController = new UserController($conn);
+                $userController->registerUser();
                 break;
             case '/users':
                 include ("views/manageusers.php");
