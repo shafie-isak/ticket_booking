@@ -1,5 +1,5 @@
 <?php
-include_once "models/user.php";
+include "models/userModel.php";
 
 class UserController {
     private $userModel;
@@ -8,12 +8,7 @@ class UserController {
         $this->userModel = new UserModel($db);
     }
 
-    public function showRegisterForm() {
-        include 'views/user.php';
-    }
-    public function showHome() {
-        include 'views/home.php';
-    }
+ 
 
     public function registerUser() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -31,6 +26,12 @@ class UserController {
             }
         }
     }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    include_once ('config/database.php');
+    $controller = new UserController($conn);
+    $controller->registerUser();
 }
 
 

@@ -1,11 +1,12 @@
 <?php
-  include('includes/header.php');  
+  include('includes/header.php'); 
+  include('controllers/userController.php')
 ?>
 
 <div class="overlay">
     <div class="login">
       <h1>Jion Us</h1>
-      <form action="/register_user" method="POST">
+      <form action="/register" method="POST">
         <input type="text" name="name" placeholder="name" required>
         <input type="email" name="email"placeholder="email" required>
         <input type="phone" name="phone"placeholder="phone" required>

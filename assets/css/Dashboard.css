@@ -424,8 +424,10 @@ select {
 /* Form container styling */
 .ticket-booking-form {
     width: 80%;
-    margin: 0 auto;
-    padding: 15px;
+    max-height: 75vh;
+    margin: 15px auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 /* Heading styling */
@@ -435,8 +437,9 @@ select {
     color: #fff;
     font-size: 18px;
     padding: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 
@@ -450,7 +453,7 @@ select {
     border-bottom-right-radius: 5px;
 }
 
-/* Input and select fields styling */
+
 .ticket-booking-form .input-field {
     width: 100%;
     padding: 7px;
@@ -461,13 +464,21 @@ select {
     color: #333;
 }
 
+.ticket-booking-form textarea{
+    height: 120px;
+    resize: none;
+}
+
+.des-textarea {
+    grid-column: span 2;
+}
 .ticket-booking-form .input-field:focus {
     border-color: #01606F;
     outline: none;
     background-color: #fff;
 }
 
-/* Label styling */
+
 .ticket-booking-form label {
     font-size: 12px;
     font-weight: 600;
@@ -475,7 +486,7 @@ select {
     color: #333;
 }
 
-/* Button styling */
+
 .ticket-booking-form form button {
     grid-column: span 2;
     padding: 12px;
@@ -492,3 +503,16 @@ select {
     background-color: #014c4f;
 }
 
+#image-preview-container {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+    grid-column: span 2;
+}
+
+#image-preview {
+    max-width: 300px;
+    max-height: 100px;
+    border: 1px solid #ddd;
+    padding: 5px;
+}

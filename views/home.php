@@ -1,9 +1,7 @@
 <?php
   include('includes/header.php');  
 
-  if (isset($_POST['book_now'])) {
-    header('Location: /ticketbooking');
-  }  
+ 
 ?>
 
 <div class="heroSection">
@@ -12,7 +10,8 @@
             <h1>"Your Dream Trip, Just a <br><span>Click Away</span>"</h1>
             <p>
                 Browse destinations, book tickets, and start your adventure today!
-                This combines an inviting message with a clear prompt to take action, guiding users to explore and book their trips effortlessly.
+                This combines an inviting message with a clear prompt to take action, 
+                guiding users to explore and book their trips effortlessly.
             </p>
             <form>
                 <input type="text" placeholder="Search an event">
