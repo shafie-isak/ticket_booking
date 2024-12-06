@@ -470,7 +470,7 @@ select {
 }
 
 .des-textarea {
-    grid-column: span 2;
+    /* grid-column: span 2; */
 }
 .ticket-booking-form .input-field:focus {
     border-color: #01606F;
@@ -506,8 +506,8 @@ select {
 #image-preview-container {
     display: none;
     margin-top: 20px;
-    text-align: center;
-    grid-column: span 2;
+    /* text-align: center; */
+    /* grid-column: span 2; */
 }
 
 #image-preview {

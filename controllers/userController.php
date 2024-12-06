@@ -1,5 +1,7 @@
 <?php
 include "models/userModel.php";
+include_once ('config/database.php');
+
 
 class UserController {
     private $userModel;
@@ -29,7 +31,6 @@ class UserController {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    include_once ('config/database.php');
     $controller = new UserController($conn);
     $controller->registerUser();
 }
