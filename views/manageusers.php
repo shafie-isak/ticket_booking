@@ -1,10 +1,22 @@
 <?php 
     include("includes/dashbordHeader.php");
+    include_once 'config/database.php';
+    // include_once 'models/userModel.php';
+    include_once 'controllers/userController.php';
+
+    $userController = new UserController($conn);
+    $users = $userController->getUsers();
 ?>
 
 <div class="dashContainer">
     <?php 
         include("includes/sidebar.php");
+
+        if (isset($_GET["delete"])) {
+            $userController->deleteUser($_GET["delete"]);
+            header("location: /users");
+            exit();
+        }
     ?>
     <div class="dashContentContainer">
     <div class="dashMainContentCont">
@@ -45,63 +57,29 @@
             <table>
                 <thead>
                     <tr>
+                        <th>ID</th>
                         <th>Name</th>
-                        <th>Email</th>
                         <th>Phone</th>
-                        <th>Password</th>
+                        <th>Email</th>
                         <th>Role</th>
-                        <th class="users-table-last-child">Action</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
+                    <?php  foreach($users as $user): ?>
                     <tr>
-                        <td>John Doe</td>
-                        <td>john.doe@example.com</td>
-                        <td>+1 234 567 890</td>
-                        <td>********</td>
-                        <td>Admin</td>
+                        <td><?php echo htmlspecialchars($user['id']); ?></php></td>
+                        <td><?php echo htmlspecialchars($user['name']); ?></td>
+                        <td><?php echo htmlspecialchars($user['phone']); ?></td>
+                        <td><?php echo htmlspecialchars($user['email']); ?></td> 
+                        <td><?php echo htmlspecialchars($user['role']); ?></td>
                         <td class="users-table-last-child">
-                            <button class="view-btn"><i class="fa-regular fa-eye"></i></button>
-                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
+                           <a href="register?id=<?php echo $user['id']; ?>" class="fa-solid fa-pen-to-square"></a> |
+                           <a href="users?delete=<?php echo $user['id']; ?>" onclick="return confirm('Are you sure?');" class="fa-solid fa-trash"></a>
                         </td>
                     </tr>
-                    <tr>
-                        <td>Jane Smith</td>
-                        <td>jane.smith@example.com</td>
-                        <td>+1 987 654 321</td>
-                        <td>********</td> 
-                        <td>User</td>
-                        <td class="users-table-last-child">
-                            <button class="view-btn"><i class="fa-regular fa-eye"></i></button>
-                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>John Doe</td>
-                        <td>john.doe@example.com</td>
-                        <td>+1 234 567 890</td>
-                        <td>********</td>
-                        <td>Admin</td>
-                        <td class="users-table-last-child">
-                            <button class="view-btn"><i class="fa-regular fa-eye"></i></button>
-                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Jane Smith</td>
-                        <td>jane.smith@example.com</td>
-                        <td>+1 987 654 321</td>
-                        <td>********</td> 
-                        <td>User</td>
-                        <td class="users-table-last-child">
-                            <button class="view-btn"><i class="fa-regular fa-eye"></i></button>
-                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
+                    <?php endforeach; ?>
+                    
                     <!-- More rows can follow the same structure without the extra "<" -->
                 </tbody>
             </table>

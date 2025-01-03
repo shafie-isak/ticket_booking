@@ -4,39 +4,24 @@
 
 <div class="bookingFormcontainer">
         <div class="formHeader">
-            <h1>Ticket Booking Form</h1>
+            <h1>Book Ticket</h1>
         </div>
         <form action="submit_booking.php" method="POST">
             <!-- Personal Information -->
             <div class="form-group">
-                <label for="name">Full Name:</label>
+                <label for="name">Name:</label>
                 <input class="input" type="text" id="name" name="name" required>
             </div>
-            <div class="form-group">
-                <label for="email">Email Address:</label>
-                <input class="input" type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number (Optional):</label>
-                <input class="input" type="text" id="phone" name="phone">
-            </div>
+         
             <!-- Venue Selection -->
             <div class="form-group">
-                <label for="venue">Select Venue:</label>
+                <label for="venue">Select Type:</label>
                 <select class="input" id="venue" name="venue" required>
                     <option value="zoo">Zoo</option>
                     <option value="swimming_pool">Swimming Pool</option>
                 </select>
             </div>
-            <!-- Date and Time -->
-            <div class="form-group">
-                <label for="date">Date of Visit:</label>
-                <input class="input" type="date" id="date" name="date" required>
-            </div>
-            <div class="form-group">
-                <label for="time">Time of Visit:</label>
-                <input class="input" type="time" id="time" name="time" required>
-            </div>
+    
             <!-- Ticket Quantity -->
             <div class="form-group">
                 <label for="adults">Number of tickets</label>
@@ -46,11 +31,16 @@
             <div class="form-group">
                 <label for="payment_method">Select Payment Method:</label>
                 <select class="input" id="payment_method" name="payment_method" required>
-                    <option value="credit_card">Credit Card</option>
-                    <option value="debit_card">Debit Card</option>
-                    <option value="paypal">Online Payment (PayPal)</option>
+                    <option value="credit_card">Card</option>
+                    <option value="paypal">Mobile Payment</option>
                     <option value="cash">Cash on Arrival</option>
                 </select>
+            </div>
+
+            <!-- Total Price -->
+            <div class="form-group">
+                <label for="adults">Total Price</label>
+                <input class="input" type="number" id="adults" name="totoal" min="0" required>
             </div>
             <!-- Terms and Conditions -->
             <div class="terms">
@@ -60,7 +50,7 @@
                 </label>
             </div>
             <!-- Submit Button -->
-            <button type="submit">Submit Booking</button>
+            <button type="submit">Submit</button>
         </form>
     </div>
 
