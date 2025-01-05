@@ -28,7 +28,7 @@ if (isset($_GET['id'])) {
       <input type="password" name="password" placeholder="create password" required>
       <button type="submit" name="submit">Register</button>
     </form>
-    <p>I have an acount, <a href="#">Login</a></p>
+    <p>I have an acount, <a href="/login">Login</a></p>
   </div>
 </div>
 

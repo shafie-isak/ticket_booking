@@ -16,7 +16,7 @@ class UserController
 
     public function registerUser()
     {
-        if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset( $_POST['submit'] )) {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
             $name = $_POST['name'] ?? null;
             $email = $_POST['email'] ?? null;
             $phone = $_POST['phone'] ?? null;
@@ -39,7 +39,7 @@ class UserController
 
             if ($this->userModel->registerUser($name, $email, $phone, $password)) {
                 // Redirect to login page or display success message
-                echo "User registered successfully!";
+                header('location: /login');
             } else {
                 echo "Error: Could not register user.";
             }
@@ -83,17 +83,30 @@ class UserController
         }
         return null;
     }
-    
-    public function getUsers() {
+
+    public function getUsers()
+    {
         return $this->userModel->getAllUsers();
     }
 
-    public function getUserById($id) {
+    public function getUserById($id)
+    {
         return $this->userModel->getUserById($id);
     }
 
-    public function deleteUser($id) {
+    public function deleteUser($id)
+    {
         $this->userModel->deleteUser($id);
+    }
+
+    public function logOut()
+    {
+        session_start();
+        session_unset();
+        session_destroy();
+        header('location: /login');
+        exit();
+
     }
 
 }

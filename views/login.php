@@ -11,14 +11,14 @@ $error_message = $controller->login();
     <div class="login">
         <h1>Welcome back</h1>
         <form action="" method="post">
-            <input type="email" placeholder="username" name="loginName" required>
+            <input type="email" placeholder="username" name="loginName">
             <input type="password" placeholder="password" name="loginpass" required>
             <button type="submit" name="submit">Login</button>
         </form>
         <?php if (isset($error_message)) : ?>
             <p style="color: red;"><?= $error_message ?></p>
         <?php endif; ?>
-        <p>If you don't have an account, <a href="#">Register</a></p>
+        <p>If you don't have an account, <a href="/register">Register</a></p>
     </div>
 </div>
 

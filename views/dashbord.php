@@ -1,5 +1,6 @@
 <?php 
     include "includes/dashbordHeader.php";
+    include "includes/auth.php";
 ?>
 
 <div class="dashContainer">

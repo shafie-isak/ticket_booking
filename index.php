@@ -29,7 +29,9 @@
             "/bookticket" => "views/adminbookticket.php",
             "/login" => "views/login.php",
             "/register" => "views/userRegistration.php",
-            "/users" => "views/manageusers.php"
+            "/users" => "views/manageusers.php",
+            "/bookings" => "views/bookings.php",
+            "/logout" => "views/logout.php",
         ];
 
 
