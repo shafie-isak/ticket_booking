@@ -468,27 +468,27 @@ h1.sectionHeader{
 }
 
 
-.partnersSection {
-  text-align: center;
-  padding: 20px;
-}
+  .partnersSection {
+    text-align: center;
+    padding: 20px;
+  }
 
 .sectionHeader {
   font-size: 1rem;
   margin-bottom: 10px;
 }
 
-.partnersContainer {
-  display: flex;
-  overflow-x: hidden;
-  white-space: nowrap;
-  animation: scrollPartners 20s linear infinite;
-}
+  .partnersContainer {
+    display: flex;
+    overflow-x: hidden;
+    white-space: nowrap;
+    animation: scrollPartners 20s linear infinite;
+  }
 
-.partnerLogo {
-  display: inline-block;
-  margin-right: 40px;
-}
+  .partnerLogo {
+    display: inline-block;
+    margin-right: 40px;
+  }
 
 .partnerLogo img {
   width: 70px; 

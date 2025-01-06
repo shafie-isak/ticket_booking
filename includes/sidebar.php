@@ -20,7 +20,7 @@
                     <ol class="submenu">
                         <li><a href="/managetickets">Manage Tickets</a></li>
                         <li><a href="bookticket">Book Ticket</a></li>
-                        <li><a href="#">Bookings</a></li>
+                        <li><a href="/bookings">Bookings</a></li>
                     </ol>
                 </li>
                 <li><a href="/users">Users</a></li>

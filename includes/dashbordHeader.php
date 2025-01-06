@@ -1,3 +1,5 @@
+
+
 <div class="dashboardHeaderContainer">
     <div class="dashboardHeaderleft">
         <img src="assets/images/logo_white.png" alt="logo">
@@ -16,7 +18,7 @@
                 <p class>shafie@gmail.com</p>
             </div>
             <hr>
-            <a href="#">Logout</a>
+            <a href="/logout">Logout</a>
         </div>
     </div>
 </div>

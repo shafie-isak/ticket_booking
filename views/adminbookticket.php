@@ -21,12 +21,12 @@
                     <label for="name">Full Name:</label>
                     <input class="input-field" type="text" id="name" name="name" required>
                 </div>
-                <div class="form-group-booking">
+                <!-- <div class="form-group-booking">
                     <label for="email">Email Address:</label>
                     <input class="input-field" type="email" id="email" name="email" required>
-                </div>
+                </div> -->
                 <div class="form-group-booking">
-                    <label for="phone">Phone Number (Optional):</label>
+                    <label for="phone">Phone Number:</label>
                     <input class="input-field" type="text" id="phone" name="phone">
                 </div>
                 <!-- Venue Selection -->
@@ -38,18 +38,15 @@
                     </select>
                 </div>
                 <!-- Date and Time -->
-                <div class="form-group-booking">
-                    <label for="date">Date of Visit:</label>
-                    <input class="input-field" type="date" id="date" name="date" required>
-                </div>
-                <div class="form-group-booking">
-                    <label for="time">Time of Visit:</label>
-                    <input class="input-field" type="time" id="time" name="time" required>
-                </div>
+               
                 <!-- Ticket Quantity -->
                 <div class="form-group-booking">
                     <label for="adults">Number of tickets</label>
                     <input class="input-field" type="number" id="adults" name="adults" min="0" required>
+                </div>
+                 <div class="form-group-booking">
+                    <label for="total">Total Price:</label>
+                    <input class="input-field" type="number" id="total" name="total" required>
                 </div>
                 <!-- Payment Information -->
                 <div class="form-group-booking">
