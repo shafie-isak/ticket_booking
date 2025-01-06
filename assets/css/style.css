@@ -36,52 +36,67 @@
 
 .container{
   width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
 }
-header{
+header {
   background-color: #01606F;
   padding: 12px;
 }
-.header{
-  background-color: #01606F;
+
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-header a img{
-  width: 200px;
+
 }
 
-nav ul{
+header a img {
+  width: 150px; /* Adjust width for smaller screens */
+}
+
+nav ul {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
-nav ul li a{
+nav ul li a {
   color: #fff;
   font-size: 15px;
 }
 
-nav ul li a:hover{
+.register-nav{
+  display: none;
+}
+
+.close-btn{
+  display: none;
+}
+
+nav ul li a:hover {
   color: #E1B444;
   transition: all 0.5s;
 }
 
-.active{
-padding: 10px;
-background-color: #149fb4a4;
-font-weight: 500;
+.active {
+  padding: 10px;
+  background-color: #149fb4a4;
+  font-weight: 500;
 }
 
+.registrLogin {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 
-.registrLogin a{
-  font-size: 18px;
+.registrLogin a {
+  font-size: 15px;
   font-weight: 500;
   color: #E1B444;
-  margin-right: 20px;
 }
 
-.registrLogin button{
+.registrLogin button {
   background-color: transparent;
   padding: 8px 10px;
   border-radius: 10px;
@@ -92,14 +107,11 @@ font-weight: 500;
   cursor: pointer;
 }
 
-
-.registrLogin button:hover{
+.registrLogin button:hover {
   background-color: #E1B444;
-  cursor: pointer;
   color: #01606F;
   transition: all 0.5s;
 }
-
 
 
 .heroSection{
@@ -191,7 +203,6 @@ cursor: pointer;
   outline: 7px solid #fff
 }
 
-/* Rotations */
 .image1 {
   animation: moveUpDown2 4s infinite alternate;
   right: 120px;
@@ -209,13 +220,12 @@ cursor: pointer;
   animation: moveUpDown 4s infinite alternate;
 }
 
-/* Animation for moving up and down */
 @keyframes moveUpDown {
   0% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-20px); /* Adjust this for how much you want it to move */
+    transform: translateY(-20px);
   }
   100% {
     transform: translateY(0);
@@ -224,29 +234,28 @@ cursor: pointer;
 
 @keyframes moveUpDown3 {
   0% {
-    transform: translateY(0) rotate(45deg); /* Keep the rotation */
+    transform: translateY(0) rotate(45deg);
   }
   50% {
-    transform: translateY(-20px) rotate(45deg); /* Keep the rotation */
+    transform: translateY(-20px) rotate(45deg); 
   }
   100% {
-    transform: translateY(0) rotate(45deg); /* Keep the rotation */
+    transform: translateY(0) rotate(45deg); 
   }
 }
 
 @keyframes moveUpDown2 {
   0% {
-    transform: translateY(0) rotate(-45deg); /* Keep the rotation */
+    transform: translateY(0) rotate(-45deg); 
   }
   50% {
-    transform: translateY(-20px) rotate(-45deg); /* Keep the rotation */
+    transform: translateY(-20px) rotate(-45deg); 
   }
   100% {
-    transform: translateY(0) rotate(-45deg); /* Keep the rotation */
+    transform: translateY(0) rotate(-45deg);
   }
 }
 
-/* Optional: Adding delay to each image for a staggered effect */
 .image1 {
   animation-duration: 4s;
   animation-delay: 0s;
@@ -262,33 +271,22 @@ cursor: pointer;
   animation-delay: 1s;
 }
 
-.tickets{
+.tickets {
   padding: 20px;
-  display: flex;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 15px; 
 }
 
-.scroller{
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-  overflow-x: scroll;
-  scrollbar-width: none;
-}
+
 
 .ticketsSection{
   padding: 30px;
 }
 
 .ticketCard{
-  min-width: 300px;
-  width: 380px;
+  width: 100%;
+  max-width: 360px;
   background-color: #fff;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   border-radius: 20px;

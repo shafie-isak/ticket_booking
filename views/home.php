@@ -13,12 +13,13 @@
                 This combines an inviting message with a clear prompt to take action, 
                 guiding users to explore and book their trips effortlessly.
             </p>
-            <form>
-                <input type="text" placeholder="Search an event">
+            <form class="search-bar">
+                <input type="text" placeholder="Search">
                 <button type="submit">
-                    <i class="fa-solid fa-magnifying-glass icon_color"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </form>
+
             <a href="/tickets"><button class="btn">Explore more</button></a>
         </div>
         <div class="image-container">
