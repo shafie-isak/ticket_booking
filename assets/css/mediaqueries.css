@@ -202,12 +202,12 @@
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
         transition: box-shadow 0.3s ease;
     }
+
+
+    .aboutImgCont{
+        display: none;
+    }
     
-
-
-
-
-
 
 
 
@@ -252,7 +252,50 @@
         display: flex; 
       }
 
-      
+      .contact {
+        flex-direction: column; /* Stack the form and info vertically */
+        align-items: center;
+        gap: 20px;
+      }
+    
+      .contact form,
+      .contact .contactIinfo {
+        width: 100%; /* Make both sections take full width */
+      }
+    
+      .contact .contactIinfo div {
+        flex-direction: column; /* Stack items in info section */
+        gap: 5px;
+      }
+    
+      .contact .contactIinfo .socialMedia {
+        gap: 10px;
+      }
+    }
+    
+    /* Media Query for Mobile */
+    @media screen and (max-width: 480px) {
+      .contact form input,
+      .contact form textarea {
+        font-size: 14px; /* Adjust font size */
+      }
+    
+      .contact form button {
+        font-size: 16px; /* Adjust button size */
+        padding: 10px;
+      }
+    
+      .contact .contactIinfo img {
+        width: 80%; /* Shrink image for smaller screens */
+      }
+    
+      .contact .contactIinfo div i {
+        font-size: 18px; /* Reduce icon size */
+      }
+    
+      .contact .contactIinfo .socialMedia i {
+        font-size: 25px; /* Reduce social media icon size */
+      }
       
   }
   
