@@ -526,89 +526,102 @@ to {
 
 
 /* footer styling startis here */
-
-footer{
+footer {
   background-color: #01606F;
   border-top: 2px solid #E1B444;
   margin-top: 10px;
 }
 
-.footer{
+.footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 20px;
-  gap: 100px;
+  gap: 50px;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
 }
 
-.footer p{
+.footer p {
   font-size: 18px;
   color: #fff;
   font-style: italic;
 }
 
-
-.footer nav ul{
+.footer nav ul {
+  display: flex;
   flex-direction: column;
   margin-top: 20px;
   margin-left: 15px;
+  gap: 10px; 
 }
 
-.footer nav ul li a{
+.footer nav ul li a {
   font-size: 15px;
   font-weight: 300;
+  color: #fff; 
+  text-decoration: none; 
 }
 
-.footer form{
-  width: 300px;
+.footer nav ul li a:hover {
+  color: #E1B444; 
+}
+
+.footer form {
+  width: 100%;
+  max-width: 500px; 
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  align-items: end;
+  gap: 10px; 
 }
 
-.footer form input, .footer form textarea{
+.footer form input,
+.footer form textarea {
   padding: 10px;
   border-radius: 10px;
   width: 100%;
   border: none;
   outline: none;
-  margin: 5px;
+  margin: 5px 0;
   background-color: #89d8e4;
 }
-.footer form input:focus, .footer form textarea:focus{
+
+.footer form input:focus,
+.footer form textarea:focus {
   outline: 4px solid #00c5e3;
 }
 
-.footer form textarea{
+.footer form textarea {
   height: 100px;
   resize: none;
 }
 
-.footer form button{
+.footer form button {
   border: none;
   padding: 10px 15px;
   font-size: 15px;
   background-color: #00c5e3;
   border-radius: 10px;
+  cursor: pointer;
 }
 
-.footer form button:hover{
+.footer form button:hover {
   background-color: #E1B444;
   color: #01606F;
   transition: all 0.5s;
 }
 
-.footer img{
-  align-content: center;
+.footer img {
+  max-width: 100%; /* Ensures image is responsive */
+  height: auto;
 }
 
-footer hr{
-  border: none; 
+footer hr {
+  border: none;
   border-top: 1px solid #fff;
 }
-footer .copyright{
-  font-size: 10px;
+
+footer .copyright {
+  font-size: 12px;
   text-align: center;
   color: #fff;
   padding: 15px;
