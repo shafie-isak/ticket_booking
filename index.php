@@ -34,6 +34,7 @@
             "/users" => "views/manageusers.php",
             "/bookings" => "views/bookings.php",
             "/logout" => "views/logout.php",
+            "/reports"=> "views/reports.php",
         ];
 
 
@@ -62,4 +63,3 @@
 <script src="assets/js/main.js"></script>
 </body>
 </html>
-

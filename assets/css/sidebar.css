@@ -1,20 +1,21 @@
-.sideBarContainer{
+.sideBarContainer {
     background-color: #01606F;
     height: 92vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 20%;
+    transition: all 0.3s ease-in-out;
 }
 
-.sideBarContainer .addTicketCont{
+.sideBarContainer .addTicketCont {
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.addTicketCont .addTicketBtn{
+.addTicketCont .addTicketBtn {
     padding: 15px 20px;
     font-size: 15px;
     font-weight: 500;
@@ -24,22 +25,24 @@
     border-radius: 15px;
 }
 
-.sideBarContainer nav ul{
+.sideBarContainer nav ul {
     display: block;
     margin-top: 20px;
 }
-.sideBarContainer a{
+
+.sideBarContainer a {
     display: block;
     padding: 10px;
     padding-left: 40px;
     color: #fff;
+    text-decoration: none;
 }
 
-
-.sideBarContainer nav ul a:hover{
+.sideBarContainer nav ul a:hover {
     background-color: #00859a;
     color: #fff;
 }
+
 .submenu {
     display: none;
     list-style: none;
@@ -59,7 +62,7 @@
     color: #01606F;
 }
 
-.sideBarContainer .logoutBtn{
+.sideBarContainer .logoutBtn {
     padding: 10px;
     background-color: #E1B444;
     color: #01606F;
@@ -70,74 +73,63 @@
     width: 80%;
     cursor: pointer;
     transition: background-color 0.3s ease;
-} 
+}
 
-.addTicketCont .addTicketBtn:hover, .logoutBtn:hover{
+.addTicketCont .addTicketBtn:hover,
+.logoutBtn:hover {
     cursor: pointer;
     background-color: #c59c35;
 }
 
-.sideBarContainer hr{
+.sideBarContainer hr {
     border: 0.5px solid #fff6;
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .sideBarContainer {
+        width: 60px;
+        overflow: hidden;
+    }
 
+    .sideBarContainer a {
+        text-align: center;
+        padding-left: 0;
+    }
 
+    .sideBarContainer .logoutBtn {
+        width: 50px;
+        font-size: 12px;
+        padding: 5px;
+    }
 
+    .addTicketCont .addTicketBtn {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        font-size: 12px;
+        text-align: center;
+    }
 
-/* Form container */
-.form-container {
-    max-width: 400px;
-    margin: 0 auto;
-    background-color: rgb(220, 54, 54);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    .submenu {
+        padding-left: 10px;
+    }
+
+    .has-submenu:hover .submenu {
+        display: block;
+    }
 }
 
-/* Heading */
-.form-container  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
+@media (max-width: 480px) {
+    .sideBarContainer {
+        position: fixed;
+        height: 100vh;
+        z-index: 1000;
+        transform: translateX(-100%);
+    }
+
+    .sideBarContainer.active {
+        transform: translateX(0);
+    }
 }
 
-/* Form styles */
-.ticket-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.ticket-form label {
-    font-size: 14px;
-    margin-bottom: 8px;
-    color: #333;
-}
-
-.ticket-form input,
-.ticket-form select {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-.ticket-form input:focus,
-.ticket-form select:focus {
-    border-color: #007BFF;
-    outline: none;
-}
-
-.ticket-form button {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.ticket-form button:hover {
-    background-color: #0056b3;
-}

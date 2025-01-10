@@ -13,7 +13,7 @@
       }
 
 
-      nav{
+      #navMenu{
         display: none;
         flex-direction: column;
         background-color: #01606F;
@@ -29,7 +29,7 @@
         z-index: 100; 
       }
 
-      nav .close-btn {
+      #navMenu .close-btn {
         display: block;
         background: none;
         border: none;
@@ -42,20 +42,20 @@
         transition: color 0.3s;
       }
       
-      nav .close-btn:hover {
+      #navMenu .close-btn:hover {
         color: #aaa;
       }
       
 
-      .header nav ul{
+      .header #navMenu ul{
         display: flex;
         flex-direction: column;
       }
     
-      .header nav ul li{
+      .header #navMenu ul li{
         width: 100%;
       }
-      .header nav ul li a {
+      .header #navMenu ul li a {
         display: block; 
         width: 100%;
         text-align: center; 
@@ -248,23 +248,23 @@
         grid-template-columns: 1fr; 
         
       }
-      nav ul {
+      #navMenu ul {
         display: flex; 
       }
 
       .contact {
-        flex-direction: column; /* Stack the form and info vertically */
+        flex-direction: column; 
         align-items: center;
         gap: 20px;
       }
     
       .contact form,
       .contact .contactIinfo {
-        width: 100%; /* Make both sections take full width */
+        width: 100%; 
       }
     
       .contact .contactIinfo div {
-        flex-direction: column; /* Stack items in info section */
+        flex-direction: column; 
         gap: 5px;
       }
     
@@ -277,24 +277,24 @@
     @media screen and (max-width: 480px) {
       .contact form input,
       .contact form textarea {
-        font-size: 14px; /* Adjust font size */
+        font-size: 14px; 
       }
     
       .contact form button {
-        font-size: 16px; /* Adjust button size */
+        font-size: 16px;
         padding: 10px;
       }
     
       .contact .contactIinfo img {
-        width: 80%; /* Shrink image for smaller screens */
+        width: 80%; 
       }
     
       .contact .contactIinfo div i {
-        font-size: 18px; /* Reduce icon size */
+        font-size: 18px; 
       }
     
       .contact .contactIinfo .socialMedia i {
-        font-size: 25px; /* Reduce social media icon size */
+        font-size: 25px; 
       }
       
   }

@@ -6,7 +6,7 @@ function isAuthenticated() {
 }
 
 if (!isAuthenticated()) {
-    header('Location: /login'); // Redirect to login if not authenticated
+    header('Location: /login'); 
     exit();
 }
 ?>

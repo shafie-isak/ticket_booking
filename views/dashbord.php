@@ -1,6 +1,11 @@
 <?php 
     include "includes/dashbordHeader.php";
-    include "includes/auth.php";
+    include_once "includes/auth.php";
+
+    if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
+        header('location: /');
+        exit();
+    }
 ?>
 
 <div class="dashContainer">

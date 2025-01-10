@@ -48,7 +48,7 @@ class UserController
 
     public function login()
     {
-        session_start();
+        // session_start();
 
         if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['submit'])) {
             $username = $_POST["loginName"] ?? '';
@@ -61,7 +61,8 @@ class UserController
 
                     $_SESSION["user_id"] = $user['id'];
                     $_SESSION['email'] = $user['email'];
-                    $_SESSION['role'] = $user['role'] ?? 'user';
+                    $_SESSION['role'] = $user['role'];
+                    $_SESSION['name'] = $user['name'];
 
                     if ($_SESSION['role'] === 'admin') {
                         header('location: /dashboard');

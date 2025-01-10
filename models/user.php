@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 class UserModel {
     private $conn;
@@ -15,4 +15,4 @@ class UserModel {
         return $statement->execute();
     }
 }
-?>
+?> -->

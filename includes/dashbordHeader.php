@@ -1,5 +1,20 @@
 
+<?php
 
+include_once 'config/database.php';
+include_once 'includes/auth.php';
+
+
+
+$user_id = $_SESSION['user_id'];
+$sql = 'SELECT name, email FROM users WHERE id = ?';
+$statement = $conn->prepare($sql);
+$statement->bind_Param('i', $user_id);
+$statement->execute();
+$result = $statement->get_result();
+$row = $result->fetch_assoc();
+
+?>
 <div class="dashboardHeaderContainer">
     <div class="dashboardHeaderleft">
         <img src="assets/images/logo_white.png" alt="logo">
@@ -12,10 +27,10 @@
         <div class="dropdown-content" id="dropdownMenu">
             <div class="userInfo">
                 <p><strong>Name</strong></p>
-                <p>Shafie</p>
+                <p><?= htmlspecialchars("Welcome, ".$row['name']) ?></p>
                 <br>
                 <p><strong>Email</strong></p>
-                <p class>shafie@gmail.com</p>
+                <p><?= htmlspecialchars($row['email']) ?></p>
             </div>
             <hr>
             <a href="/logout">Logout</a>

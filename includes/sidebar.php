@@ -24,7 +24,7 @@
                     </ol>
                 </li>
                 <li><a href="/users">Users</a></li>
-                <li><a href="#">Reports</a></li>
+                <li><a href="/reports">Reports</a></li>
             </ul>
         </nav>
     </div>
