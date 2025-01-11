@@ -23,7 +23,6 @@ class TicketModel
 {
     $sql = "SELECT * FROM tickets WHERE 1=1";
 
-    // Add search condition
     if (!empty($search)) {
         $sql .= " AND (type LIKE ? OR description LIKE ?)";
     }
@@ -33,7 +32,6 @@ class TicketModel
         $sql .= " AND type = ?";
     }
 
-    // Add sorting
     $sql .= " ORDER BY type $sort";
 
     $statement = $this->conn->prepare($sql);
@@ -59,7 +57,6 @@ class TicketModel
     return $data;
 }
 
-// Fetch unique ticket types
 public function getUniqueTicketTypes()
 {
     $sql = "SELECT DISTINCT type FROM tickets";
@@ -73,10 +70,9 @@ public function getUniqueTicketTypes()
         $sql = "UPDATE tickets SET type = ?, price = ?, description = ?";
         $params = ["sds", $type, $price, $description];
 
-        // Add image path to the query if provided
         if ($imagePath) {
             $sql .= ", image_path = ?";
-            $params[0] .= "s"; // Add "s" for the image path
+            $params[0] .= "s";
             $params[] = $imagePath;
         }
 
