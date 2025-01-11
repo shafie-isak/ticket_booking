@@ -19,7 +19,7 @@
                     <a href="#">Tickets</a>
                     <ol class="submenu">
                         <li><a href="/managetickets">Manage Tickets</a></li>
-                        <li><a href="bookticket">Book Ticket</a></li>
+                        <!-- <li><a href="bookticket">Book Ticket</a></li> -->
                         <li><a href="/bookings">Bookings</a></li>
                     </ol>
                 </li>
@@ -28,5 +28,5 @@
             </ul>
         </nav>
     </div>
-    <button name="/" class="logoutBtn">Back Home</button>
+    <a href="/"><button name="/" class="logoutBtn">Back Home</button></a>
 </div>

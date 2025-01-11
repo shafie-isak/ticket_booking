@@ -41,7 +41,7 @@ $result = $conn->query($sql);
         <!-- Ticket Type Selection -->
         <div class="form-group">
             <label for="venue">Select Type:</label>
-            <select class="input" id="venue" name="venue" required>
+            <select class="input" id="venue" name="venue" >
                 <option value="" disabled selected>Select Type</option> <!-- Placeholder Option -->
                 <?php
                 if ($result->num_rows > 0) {
@@ -59,13 +59,13 @@ $result = $conn->query($sql);
         <!-- Ticket Quantity -->
         <div class="form-group">
             <label for="adults">Number of tickets:</label>
-            <input class="input" type="number" id="adults" name="adults" min="1" required>
+            <input class="input" type="number" id="adults" name="adults" min="1" >
         </div>
 
         <!-- Payment Information -->
         <div class="form-group">
             <label for="payment_method">Select Payment Method:</label>
-            <select class="input" id="payment_method" name="payment_method" required>
+            <select class="input" id="payment_method" name="payment_method" >
                 <option value="" disabled selected>Select pay.Method</option>
                 <option value="Card">Card</option>
                 <option value="Mobile">Mobile</option>
