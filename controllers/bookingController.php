@@ -13,7 +13,7 @@ class BookingController
 
     public function addBooking()
     {
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
             $name = $_POST['name'] ?? '';
             $phone = $_POST['phone'] ?? '';
             $type = $_POST['venue'] ?? '';
