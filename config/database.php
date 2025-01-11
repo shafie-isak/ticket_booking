@@ -1,6 +1,6 @@
 <?php
 
-$host = "localhost";
+$host = "shaafi.com";
 $username = "root";
 $password = "";
 $dbname = "bookingdb";
