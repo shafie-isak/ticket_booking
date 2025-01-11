@@ -33,7 +33,6 @@ if (isset($_GET["delete"])) {
             <div class="filterCont">
                 <!-- Filter and search form -->
                 <form method="GET" action="/managetickets">
-                    <label for="search-event" class="sr-only">Search an event</label>
                     <div class="search-input-container">
                         <input id="search-event" type="text" name="search" placeholder="Search an event" value="<?php echo htmlspecialchars($search); ?>">
                         <button type="submit" class="fa-solid fa-magnifying-glass icon_color"></button>
@@ -60,7 +59,7 @@ if (isset($_GET["delete"])) {
                             <option value="DESC" <?php echo $sort === 'DESC' ? 'selected' : ''; ?>>DESC</option>
                         </select>
 
-                        <button type="submit">Apply</button>
+                        <button class="btn-apply" type="submit">Apply</button>
                     </div>
                 </form>
             </div>
